@@ -1000,7 +1000,7 @@ describe('setupOAuthCallbackServerWithLongPoll', () => {
     const customTimeout = 5000
     const result = setupOAuthCallbackServerWithLongPoll({
       port: 0, // Use any available port
-      path: '/oauth/callback',
+      path: '/callback',
       events,
       authTimeoutMs: customTimeout,
     })
@@ -1015,7 +1015,7 @@ describe('setupOAuthCallbackServerWithLongPoll', () => {
   it('should use default timeout when authTimeoutMs is not provided', async () => {
     const result = setupOAuthCallbackServerWithLongPoll({
       port: 0, // Use any available port
-      path: '/oauth/callback',
+      path: '/callback',
       events,
     })
 

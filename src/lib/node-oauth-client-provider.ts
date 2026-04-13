@@ -41,7 +41,7 @@ export class NodeOAuthClientProvider implements OAuthClientProvider {
    */
   constructor(readonly options: OAuthProviderOptions) {
     this.serverUrlHash = options.serverUrlHash
-    this.callbackPath = options.callbackPath || '/oauth/callback'
+    this.callbackPath = options.callbackPath || '/callback'
     this.clientName = options.clientName || 'MCP CLI Client'
     this.clientUri = options.clientUri || 'https://github.com/modelcontextprotocol/mcp-cli'
     this.softwareId = options.softwareId || '2e6dc280-f3c3-4e01-99a7-8181dbd1d23d'

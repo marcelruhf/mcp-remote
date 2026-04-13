@@ -229,7 +229,7 @@ export async function coordinateAuth(
   debugLog('Setting up OAuth callback server', { port: callbackPort })
   const { server, waitForAuthCode, authCompletedPromise } = setupOAuthCallbackServerWithLongPoll({
     port: callbackPort,
-    path: '/oauth/callback',
+    path: '/callback',
     events,
     authTimeoutMs,
   })
