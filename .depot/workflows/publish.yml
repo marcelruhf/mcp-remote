@@ -6,21 +6,16 @@ on:
       - '**'
     tags:
       - '!**'
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: depot-ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Setup pnpm & install
         uses: wyvox/action-setup-pnpm@v3
         with:
-          node-version: 22
-
+          node-version: 24
       - name: Build
         run: pnpm build
-
       - run: pnpm dlx pkg-pr-new publish --compact --bin
