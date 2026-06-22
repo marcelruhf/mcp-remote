@@ -1,0 +1,28 @@
+src/lib/node-oauth-client-provider.ts
+  0671a98a3ccd1426 44
+src/lib/node-oauth-client-provider.test.ts
+  0671a98a3ccd1426 65,124,140,264
+src/lib/utils.test.ts
+  0671a98a3ccd1426 1003,1018
+src/lib/coordination.ts
+  0671a98a3ccd1426 232
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "d9b1ad56df30cfe22a5208fb3d811c440961070b",
+  "prompts": {
+    "0671a98a3ccd1426": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d8816-f666-7920-a1e3-a601356b2d73",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Marcel Ruhf",
+      "total_additions": 38,
+      "total_deletions": 38,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}
