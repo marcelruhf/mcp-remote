@@ -62,7 +62,7 @@ describe('NodeOAuthClientProvider - OAuth Scope Handling', () => {
 
       const clientInfo = {
         client_id: 'test-client',
-        redirect_uris: ['http://localhost:8080/oauth/callback'],
+        redirect_uris: ['http://localhost:8080/callback'],
         scope: 'openid email profile read:user',
       }
 
@@ -121,7 +121,7 @@ describe('NodeOAuthClientProvider - OAuth Scope Handling', () => {
       expect(metadata).toMatchObject({
         scope: 'user:email repo',
         client_name: 'My Custom Client',
-        redirect_uris: ['http://localhost:8080/oauth/callback'],
+        redirect_uris: ['http://localhost:8080/callback'],
         token_endpoint_auth_method: 'none',
         grant_types: ['authorization_code', 'refresh_token'],
         response_types: ['code'],
@@ -137,7 +137,7 @@ describe('NodeOAuthClientProvider - OAuth Scope Handling', () => {
 
       const clientInfo = {
         client_id: 'test-client',
-        redirect_uris: ['http://localhost:8080/oauth/callback'],
+        redirect_uris: ['http://localhost:8080/callback'],
         scope: 'extracted custom scopes',
       }
 
@@ -261,7 +261,7 @@ describe('NodeOAuthClientProvider - OAuth Scope Handling', () => {
 
       const clientInfo = {
         client_id: 'test-client',
-        redirect_uris: ['http://localhost:8080/oauth/callback'],
+        redirect_uris: ['http://localhost:8080/callback'],
         scope: 'openid email profile custom:read',
       }
 
